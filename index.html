@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+  }
+  .search-bar {
+    top:200px;
+    margin-left: 100px;
+    width: 350px;
+    height:70px;
+    padding: 10px;
+    border-radius: 40px;
+    border: 5px solid rgb(235, 199, 16);
+}
+
+ 
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="final.mp4" type="video/mp4">
+  </video>
+      <div id="pageContent" hidden>
+  <div class="navbar">
+    <div class="container">
+      <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="OurTeam.html">Team</a></li>
+        <li><a href="Notification.html">Notification</a></li>
+        <li class="auth"><a href="Login.html">Login / Register</a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <p>Online fraud Link Checker</p> <br>
+  <h2>"Be vigilant when clicking on links."</h2> <br>
+  <h3>Always verify the source before clicking on any online link<br>
+    Fraudulent links often mimic legitimate ones, but with slight differences<br>
+    </h3>
+  <br>
+
+  <input type="text" class="search-bar" placeholder="Search...">
+ 
+
+  <br>
+  <br>
+  <div class="buttons">
+    <button class="btn-hover color-1">CHECK</button>
+    <button class="btn-hover color-2">REFRESH</button>
+</div>
+
+</div>
+
+<<script>
+  const video = document.getElementById('myVideo');
+  const pageContent = document.getElementById('pageContent');
+
+  setTimeout(function() {
+    video.pause(); // This will stop the video
+    video.style.display = 'none'; // This will hide the video
+    pageContent.removeAttribute('hidden'); // This will display your page content
+  }, 5000); // This will trigger the function after 5000 milliseconds, or 5 seconds
+</script>
+
+
+</body>
+</html>
