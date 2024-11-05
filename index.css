@@ -1,0 +1,24 @@
+body {
+  background: url('/static/images/home.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+h1
+{
+  padding: 10px;
+  margin: 15px;
+  font-size: 3rem;
+  color:#fefbfb;
+}
+
+h2{
+  padding: 10px;
+  margin: 15px;
+  color: #f9f6f6;
+  font-size: 2rem;
+}
+        
+          
